@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modifica file prodotti</title>
+    
+</head>
+
+<body>
+
+    <h1>Elenco Articoli</h1>
+
+    <form action="prodotti.php" method="post">
+        <input type="hidden" name="azione" value="mostra">
+        <input type="submit" value="Mostra Tabella base">
+    </form> <br>
+
+
+    <form action="prodotti.php" method="post">
+        <input type="hidden" name="azione" value="aggiunta">
+        <label for="nome">Nome articolo:</label>
+        <input type="text" id="nome" name="nome"> <br>
+
+        <label for="negozio">Città negozio:</label>
+        <input type="text" id="negozio" name="negozio"> <br>
+
+        <label for="prezzo">Prezzo articolo:</label>
+        <input type="text" id="prezzo" name="prezzo"> <br>
+
+        <label for="quantita">Quantità articolo:</label>
+        <input type="text" id="quantita" name="quantita"> <br>
+
+        <label for="tipologia">Tipologia articolo:</label>
+        <input type="text" id="tipologia" name="tipologia">
+        <input type="submit" value="Aggiungi a tabella">
+    </form> <br> <br>
+
+    <form action="prodotti.php" method="post">
+        <input type="hidden" name="azione" value="mostraCategoria">
+
+        <label for="categoria">Visualizza categoria articolo:</label>
+        <input type="text" id="categoria" name="categoria">
+
+        <input type="submit" value="Visualizza categoria articolo">
+    </form> <br> <br>
+
+    <form action="prodotti.php" method="post">
+        <input type="hidden" name="azione" value="incassoCitta">
+
+        <label for="incasso">Visualizza incasso città:</label>
+        <input type="text" id="incasso" name="incasso">
+
+        <input type="submit" value="Visualizza incasso città">
+    </form> <br>
+
+</body>
+
+</html>
